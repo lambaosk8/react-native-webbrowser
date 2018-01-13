@@ -4,12 +4,12 @@ import React from 'react-native';
 var {
     View,
     WebView,
-    PropTypes
+    PropTypes,
+    ActivityIndicator
     } = React;
 
 import BaseComponent from './BaseComponent'
 import Utils from './Utils'
-import Spinner from 'react-native-loading-spinner-overlay';
 
 import styles from './styles'
 
@@ -141,7 +141,7 @@ class Webbrowser extends BaseComponent {
                     scalesPageToFit={this.state.scalesPageToFit}
                 />
                 {this.renderToolbar()}
-                <Spinner visible={this.state.loading} />
+                {this.props.hideActivityIndicator && <ActivityIndicator style={styles.loadingIndicator} size="large" animating={this.state.loading} color="gray" />}
             </View>
         );
     }

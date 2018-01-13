@@ -14,17 +14,17 @@ export default StyleSheet.create({
     },
 
     header: {
-        transform: [{'translate':[0,0,1]}], /* bring view to front */
-        shadowColor:SHADOW_COLOR,
-        shadowOpacity:SHADOW_OPACITY,
-        shadowRadius:SHADOW_RADIUS,
-        shadowOffset: { height:1, width: 0 },
+        transform: [{ 'translate': [0, 0, 1] }], /* bring view to front */
+        shadowColor: SHADOW_COLOR,
+        shadowOpacity: SHADOW_OPACITY,
+        shadowRadius: SHADOW_RADIUS,
+        shadowOffset: { height: 1, width: 0 },
     },
 
     addressBarRow: {
         flexDirection: 'row',
-        marginTop: ELEMENT_MARGIN/2,
-        marginBottom: ELEMENT_MARGIN/2,
+        marginTop: ELEMENT_MARGIN / 2,
+        marginBottom: ELEMENT_MARGIN / 2,
         marginLeft: ELEMENT_MARGIN,
         marginRight: ELEMENT_MARGIN,
     },
@@ -53,12 +53,12 @@ export default StyleSheet.create({
         borderRadius: 3,
     },
     statusBar: {
-        marginLeft:ELEMENT_MARGIN,
-        marginRight:ELEMENT_MARGIN,
+        marginLeft: ELEMENT_MARGIN,
+        marginRight: ELEMENT_MARGIN,
         height: 22,
     },
     statusBarText: {
-        flex:1,
+        flex: 1,
         color: 'white',
         fontSize: 10,
     },
@@ -68,19 +68,28 @@ export default StyleSheet.create({
     },
 
     toolBar: {
-        shadowColor:SHADOW_COLOR,
-        shadowOpacity:SHADOW_OPACITY,
-        shadowRadius:SHADOW_RADIUS,
-        shadowOffset: { height:0, width: 0 },
-        flexDirection:'row',
-        justifyContent:'space-around',
-        paddingTop:ELEMENT_MARGIN,
-        paddingBottom:ELEMENT_MARGIN
+        shadowColor: SHADOW_COLOR,
+        shadowOpacity: SHADOW_OPACITY,
+        shadowRadius: SHADOW_RADIUS,
+        shadowOffset: { height: 0, width: 0 },
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        paddingTop: ELEMENT_MARGIN,
+        paddingBottom: ELEMENT_MARGIN
     },
 
     toolBarIcons: {
-        width:20,
-        height:20,
+        width: 20,
+        height: 20,
         opacity: 0.9
+    },
+    loadingIndicator: {
+        position: 'absolute',
+        left: 0,
+        top: 0,
+        right: 0,
+        bottom: 0,
+        justifyContent: 'center',
+        alignItems: 'center',
     }
 });
